@@ -70,20 +70,20 @@ function sortCategoriesForInsert (inputJson: Array<objectShape>) {
 }
 
 function testData (): Array<objectShape> {
-let testDataArray: Array<objectShape> = [
-  {
-    "name": "head",
-    "id": 0,
-    "parent_id": null
-  }
-]
+  let testDataArray: Array<objectShape> = [
+    {
+      "name": "head",
+      "id": 0,
+      "parent_id": null
+    }
+  ]
 
-const randomStringGenerator = () => {
-  let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-  let randomString = ''
-  for (let i = 0; i < 7; i++) {
-    randomString += (alphabet[Math.floor(Math.random() * Math.floor(alphabet.length-1))])
-  }
+  const randomStringGenerator = () => {
+    let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+    let randomString = ''
+    for (let i = 0; i < 7; i++) {
+      randomString += (alphabet[Math.floor(Math.random() * Math.floor(alphabet.length-1))])
+    }
     return randomString
   }
 
